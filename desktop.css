@@ -4,6 +4,7 @@
         padding: 0;
         box-sizing: border-box;
         overflow-x: hidden;
+        
     }
     
     header{
@@ -12,6 +13,8 @@
     }
 .container{
     width: 100vw;
+    animation: welcome1 3s ease 0s 1 normal forwards;
+    
 }
 .divBox{
 margin-left: 10%;
@@ -21,6 +24,10 @@ margin-left: 10%;
     width: 1440px;
 
 }
+.icons{
+    animation: icons 1s linear infinite ;
+
+}
 .categorybox{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -28,7 +35,7 @@ margin-left: 10%;
     row-gap: 80px;
     margin-top: 130px;
     width: 1440px;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 .category:hover{
     transform: scale(1.5);
@@ -90,4 +97,28 @@ header button{
     margin-right: 15%;
 }
 
+}
+@keyframes icons{
+			
+    0% {
+        transform:scale(1);
+    }
+    50% {
+        transform:scale(1.5);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+
+@keyframes welcome1 {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

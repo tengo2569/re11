@@ -15,7 +15,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: welcome 1s linear 1 normal none ;
+    animation: welcome 3s linear 1 normal none ;
 		
 }
 .orangebox{
