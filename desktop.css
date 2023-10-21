@@ -1,24 +1,34 @@
 @media (width>1440px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
     header{
-        width: 100%;
+        width: 100vw;
+        margin-top: 2%;
     }
 .container{
-    width: 100%;
+    width: 100vw;
 }
 .divBox{
-
+margin-left: 10%;
     width: 1440px;
 }
 .container{
-    width: 100%;
+    width: 1440px;
+
 }
 .categorybox{
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 30px;
+    column-gap: 60px;
     row-gap: 80px;
-    margin-top: 50px;
-    width: 100%;
+    margin-top: 130px;
+    width: 1440px;
+    margin-left: 5%;
 }
 .category:hover{
     transform: scale(1.5);
@@ -31,16 +41,53 @@ header{
     gap: 800px;
 
 }
+h1{
+    font-size: 56px;
+    width: 475px;
+}
+h3{
+    font-size: 18px;
+    width: 435px;
+}
+.circle{
+    width: 317px;
+height: 560px;
+flex-shrink: 0;
+}
+.poto1{
+    width: 349.474px;
+height: 483px;
+position: absolute;
+top: 17%;
+left: -6%;
+}
+.txtbox2{
+    width: 200px;
+    height: 120px;
+    top: 65%;
+    left: 2%;
+}
 footer{
 
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: space-evenly;
     gap: 800px;
+    height: 150px;
+    width: 100vw;
     margin-top: 140px;
+}
+.desktopimage{
+    position: relative;
+    display: block;
+    top: 8%;
+    right: 81%;
 }
 button{
 cursor: grab;
+}
+header button{
+    margin-right: 15%;
 }
 
 }

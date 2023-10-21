@@ -16,18 +16,31 @@
     }
     .container{
 width: 768px;
+display: grid;
+justify-content: center;
+animation-name: welcome 3s linear 1 alternate;
+		
     }
     header{
 width: 768px;        
     }
+    h2, h1, h3 {
+        padding-left: 40px;
+    }
+    .box1 button{
+        margin-left: 40px;
+    }
+    .desktopimage{
+        display: none;
+    }
     .imagenone{
         display: flex;
-        width: 250px;
+        width: 300px;
 height: 688.557px;
 transform: rotate(0deg);
 flex-shrink: 0;
 position: absolute;
-top: -15%;
+top: -30%;
 right: 0;
 z-index: -1;
 
@@ -38,28 +51,29 @@ z-index: -1;
     .poto1{
        display: flex;
        position: absolute;
-       left: -1%;
+       left: -6%;
        top: 19%;
        border-radius: 80%;
+       width: 224px;
     }
     .circle {
         position: relative;
         height: 400px;
         width: 205px;
-        left: 16%;
-        top: 0%;
+        left: -3%;
+        top: 1%;
         border: none;
     }
     
     .txtbox1{
         position: relative;
-        top: 10%;
-        right: 5%;
+        top: -5%;
+        right: 20%;
     }
     .txtbox2{
         position: absolute;
-        top: 82%;
-        left: 15%;
+        top: 85%;
+        left: -12%;
     }
     h1{
         width: 326px;
@@ -80,6 +94,7 @@ line-height: normal;
         display: grid;
         grid-template-columns: auto auto;
         column-gap: 10px;
+        margin-top: 80px;
     }
     .orangebox{
         width: 340px;
@@ -90,5 +105,45 @@ line-height: normal;
         justify-content: space-evenly;
         margin-top: 85px;
         gap: 450px;
+    }
+    footer button , header button{
+        margin-right: 40px;
+    }
+}
+@keyframes welcome{
+			
+    0% {
+        transform:scale(7);
+        animation-timing-function:ease-in;
+        opacity:0;
+    }
+    35% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+        opacity:1;
+    }
+    55% {
+        transform:scale(1.5);
+        animation-timing-function:ease-in;
+    }
+    70% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+    }
+    80% {
+        transform:scale(1.24);
+        animation-timing-function:ease-in;
+    }
+    90% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+    }
+    95% {
+        transform:scale(1.04);
+        animation-timing-function:ease-in;
+    }
+    100% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
     }
 }
