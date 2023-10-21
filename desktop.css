@@ -1,0 +1,46 @@
+@media (width>1440px){
+    header{
+        width: 100%;
+    }
+.container{
+    width: 100%;
+}
+.divBox{
+
+    width: 1440px;
+}
+.container{
+    width: 100%;
+}
+.categorybox{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    row-gap: 80px;
+    margin-top: 50px;
+    width: 100%;
+}
+.category:hover{
+    transform: scale(1.5);
+    transition: 1.5s;
+    background-color: orange;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 800px;
+
+}
+footer{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 800px;
+    margin-top: 140px;
+}
+button{
+cursor: grab;
+}
+
+}
